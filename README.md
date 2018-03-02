@@ -14,8 +14,8 @@ UpdateDateTime
 ==============
 
 To use this feature in Pyton code you need to add varable 
->__date__ = <
->__time = <
+`__date__ = `
+`__time = `
 Everytime you save this file value of this fild will be automaticly update 
 
 
