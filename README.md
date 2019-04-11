@@ -6,7 +6,7 @@ Install
 =======
 
 * Update path in .vimrc
-* Replace your .vimrc with this (symbolic link is a good idea)
+* Replace your .vimrc with this (symbolic link is a good idea ```ln .vimrc ~/.vimrc```)
 * Restart Vim
 
 
@@ -14,6 +14,7 @@ UpdateDateTime
 ==============
 
 To use this feature in Pyton code you need to add varable 
+
 ```__date__ = ```
 
 ```__time__ = ```

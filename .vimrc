@@ -1,5 +1,5 @@
 "
-
+set nocompatible
 set backspace=indent,eol,start
 set sw=4
 set expandtab
@@ -7,6 +7,9 @@ set number
 set softtabstop=4
 set hlsearch
 set ruler
+set path+=**
+set wildmenu
+filetype plugin on
 colorscheme darkblue
 syntax on
 "!!! PLEASE UPDATE THE PATH !!!
@@ -23,6 +26,8 @@ autocmd BufWritePre *.c silent! call UpdateDateTimeAnsiC()
 autocmd BufWritePre *.h silent! call UpdateDateTimeAnsiC()
 "autocmd BufWritePre *.py silent! ! git add <afile>
 au FileType tex setlocal tw=78
+
+command! MakeTags !ctags -R .
 
 "!!! PLEASE UPDATE THE PATH !!!
 function! MyAddPythonClassTemplate()
